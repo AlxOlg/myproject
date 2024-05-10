@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Каталог товаров
+{% endblock %}
+
+{% block content %}
+    <h1>Каталог товаров</h1>
+    {% for el in products %}
+        <h2>{{ el.title }}</h2>
+        <p><i>{{ el.description }}</i></p>
+        {% if el.image %}
+        <p><img class="img-article-left" src="{{el.image.url}}" height="480"></p>
+        {% endif %}
+        <p>Цена: {{ el.price }}</p>
+    {% endfor %}
+{% endblock %}

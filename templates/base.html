@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">Обо мне</a></li>
+                <li><a href="/catalog">Каталог товаров</a></li>
+                <li><a href="/prod_add">Добавить товар</a></li>
+                <li><a href="/users">Клиенты</a></li>
+                <li><a href="/user_add">Регистрация</a></li>
+                <li><a href="/orders">Все заказы</a></li>
+                <li><a href="/order_add">Оформить заказ</a></li>
+                <li><a href="/admin">Администрирование</a></li>
+            </ul>
+        </nav>
+     </header>
+    {% block content %}{% endblock %}
+</body>
+</html>
